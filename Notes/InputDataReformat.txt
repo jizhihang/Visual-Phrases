@@ -1,0 +1,37 @@
+Current Issue : 
+Subject Exists but has multiple actors on it. 
+
+Line 90 of test2 was the fix for subject does not exist..
+________________
+New Method, Using Bounding Boxes:
+
+still go through all tags..
+for tags that split > 1, 
+	find number of instances of phrase
+	
+	find number of instances of subject + number of instances of object
+	find number of possible locations
+
+	If number of possible locations != numInst of phrase
+		test if bbox of subject + object is within bbox of phrase.
+		if so, use that feature.
+	else set to a 0 feature.
+
+	had to make assumption that subject will always exist.. since bounding box
+may not always match up.
+__________________
+
+*************
+download OG data check instr..
+__
+
+1786 - instance of NOT enough subjects per phrase.
+1958 - subject-phrase-object, object -- missing subject.
+
+_____________
+
+Error Cases:
+1. [subject + phrase] data point(s), no subject data point(s).
+2. [subject + phrase + object] ... [subject] ... [object] , missing subject + object for a sample.
+3. [subject + phrase + object] [object] , missing subject.
+
