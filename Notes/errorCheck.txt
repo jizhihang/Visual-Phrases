@@ -1,5 +1,0 @@
-the blank in errorimgs is 3000_000065.jpg
-
-In Matlab, it says that it is a 4-D uint8 object. 
-
-Dimensions are 300 400 1 5
