@@ -48,10 +48,4 @@ consider possibility of multiple phrases in image?
 get next phrase. incr by however many first phrases there are.
 split the next item, if it is split into > 1 it must be a phrase.. repeat above. 
 
-_______
-
-Plan again..
-
-
-Just match with pOut and get the corresponding output.
 		
