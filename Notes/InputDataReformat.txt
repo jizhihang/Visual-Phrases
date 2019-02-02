@@ -32,6 +32,14 @@ _____________
 
 Error Cases:
 1. [subject + phrase] data point(s), no subject data point(s).
-2. [subject + phrase + object] ... [subject] ... [object] , missing subject + object for a sample.
-3. [subject + phrase + object] [object] , missing subject.
+[person_jumping] [person]? - same box as person
 
+2. [subject + phrase + object] ... [subject] ... [object] , missing subject + object for a sample.
+person_riding_horse  -- ignore phrase without both subject + object.  
+
+3. [subject + phrase + object] [object] , missing subject.
+ignore , manually change label if few cases. 
+_______________________________
+random forest - on matlab, or on python
+
+check website from dataset , compare accuracy
