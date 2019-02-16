@@ -1,0 +1,4 @@
+Test set used the last 100 samples in the data set, samples 6321 - 6421
+
+The accuracy of the model from Training set A was: 0.67
+
