@@ -1,0 +1,4 @@
+In spyder, make sure .mat -> .csv works.
+at the moment, the .csv for the training output is not properly working on a row-row basis.
+Currently creates a single row.
+

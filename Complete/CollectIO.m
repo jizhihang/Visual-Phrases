@@ -9,7 +9,7 @@ load 'TrainingInputA.mat';
 IOError = {};
 % Change directory to images that you want to populate training tables
 % with. 
-
+cd G:\Documents\Visual_Phrases_Project_DATA;
 files = dir('CroppedImages');
 f = numel(files);
 for imgs = 1:f
@@ -171,7 +171,7 @@ for imgs = 1:f
       IOError{err+1,2} = msgText;
    end
 end
+cd G:\Documents\Visual_Phrases_Project;
 save('TrainingOutputA.mat', 'TrainingOutput');
 save('TrainingInputA.mat', 'TrainingInput');
-cd G:\Documents\Visual_Phrases_Project;
 save('IOError.mat', 'IOError');
