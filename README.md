@@ -16,7 +16,9 @@ LightGBM's Random Forest multi-class classifier is used to create the classifica
 ___
 This project is currently a work in progress.
 
-Update: 2/16/19 - First Model Trained. 67% top-1 accuracy on test dataset.
+Updates: 
+- 2/16/19 - First Model Trained. 67% top-1 accuracy on test dataset.
+- 3/02/19 - Model 2 69% top-1 accuracy.
 
 ___
 
