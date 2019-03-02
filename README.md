@@ -21,13 +21,13 @@ Update: 2/16/19 - First Model Trained. 67% top-1 accuracy on test dataset.
 ___
 
 To-do list: 
-	Roadmap:
-	- Implement Object detection network to find objects of interest and its location instead of using ground-truth boxes.
-	- Evaluate detection using mAP (mean average precision) 
-	- Implement top-n accuracy for model. 
-	- Consolidate system to:
-		1) take an image
-		2) detect subject + action (bounding box) 
-		3) predict potential phrases (actions) for each bounding box
-		4) superimpose bounding boxes with phrase on image
+Roadmap:
+- Implement Object detection network to find objects of interest and its location instead of using ground-truth boxes.
+- Evaluate detection using mAP (mean average precision) 
+- Implement top-n accuracy for model. 
+- Consolidate system to:
+	1) take an image
+	2) detect subject + action (bounding box) 
+	3) predict potential phrases (actions) for each bounding box
+	4) superimpose bounding boxes with phrase on image
 
