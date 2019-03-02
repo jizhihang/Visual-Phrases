@@ -24,6 +24,7 @@ To-do list:
 	Roadmap:
 	- Implement Object detection network to find objects of interest and its location instead of using ground-truth boxes.
 	- Evaluate detection using mAP (mean average precision) 
+	- Implement top-n accuracy for model. 
 	- Consolidate system to:
 		1) take an image
 		2) detect subject + action (bounding box) 
