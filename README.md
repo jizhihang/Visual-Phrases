@@ -17,8 +17,8 @@ ___
 This project is currently a work in progress.
 
 Updates: 
-- 2/16/19 - First Model Trained. 67% top-1 accuracy on test dataset.
-- 3/02/19 - Model 2 69% top-1 accuracy.
+- 2/16/19 - First Model Trained. 67% top-1 (recall) accuracy on test dataset.
+- 3/02/19 - Model 2 69% top-1 (recall) accuracy.
 
 ___
 
