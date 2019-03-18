@@ -12,6 +12,7 @@ This project will attempt to classify these visual phrases by training a model b
 on extracted feature vectors of images from the pooling layer of a convolutional neural network.
 
 The feature vectors are extracted from MatConvNet.
+FasterRCNN is used to identify potential subjects within the image.
 LightGBM's Random Forest multi-class classifier is used to create the classification model for this project.
 ___
 This project is currently a work in progress.
@@ -28,11 +29,11 @@ ___
 
 ## To-do list: 
 - Evaluate detection using mAP (mean average precision) 
-- ~~Implement Object detection network to find objects of interest and its location instead of using ground-truth boxes.
-- ~~Implement top-n accuracy for model. 
+- ~~Implement Object detection network to find objects of interest and its location instead of using ground-truth boxes.~~
+- ~~Implement top-n accuracy for model.~~
 - Consolidate system to:
-	1) ~~take an image
-	2) ~~detect subject + action (bounding box) 
-	3) ~~predict potential phrases (actions) for each bounding box
+	1) ~~take an image~~
+	2) ~~detect subject + action (bounding box)~~
+	3) ~~predict potential phrases (actions) for each bounding box~~
 	4) superimpose bounding boxes with phrase on image
 
