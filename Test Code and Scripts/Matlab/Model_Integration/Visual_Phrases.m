@@ -27,7 +27,7 @@ imnet = dagnn.DagNN.loadobj(load('imagenet-resnet-50-dag.mat'));
 imnet.mode = 'normal';
 imnet.vars(imnet.getVarIndex('pool5')).precious = 1;
 
-Features = {};
+Input = {};
 Tags = {};
 IOError = {};
 PairBounds = {};
@@ -133,7 +133,7 @@ for imgs = 1:f
             % Extract features and format for model.
             [F, T] = extract_features(imnet, image, crop_bounds);
             if ~isempty(F)
-                Features = [Features; F];
+                Input = [Input; F];
                 Tags = [Tags; T];
             end
             if iscell(pair_bounds)
@@ -156,7 +156,7 @@ toc
 %% Save
 % Remove blanks.
 Tags = Tags(~cellfun('isempty', Tags));
-Features = Features(~cellfun('isempty', Features));
+Input = Input(~cellfun('isempty', Input));
 cd G:\Documents\Visual_Phrases_Project_DATA\Test\Data;
 save('Features.mat', 'Features');
 save('Tags.mat', 'Tags');

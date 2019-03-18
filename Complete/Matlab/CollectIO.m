@@ -149,12 +149,12 @@ for imgs = 1:f
             %}
                         if ~isempty(ou)
                             TrainingOutput{end+1,1} = OGT{ou, 2};
-                            TrainingInput{end+1,1} = input;
+                            Input{end+1,1} = input;
                         end
                         if ~isempty(ol)
                             TrainingOutput{end+1,1} = OGT{ol, 2};
                             % Passive Input case.
-                            TrainingInput{end+1,1} = passive_input;
+                            Input{end+1,1} = passive_input;
                         end        
 
                     end
@@ -171,7 +171,7 @@ for imgs = 1:f
       IOError{err+1,2} = msgText;
    end
 end
-cd G:\Documents\Visual_Phrases_Project;
+cd G:\Documents\Visual_Phrases_Project_DATA\;
 save('TrainingOutputA.mat', 'TrainingOutput');
 save('TrainingInputA.mat', 'TrainingInput');
 save('IOError.mat', 'IOError');
