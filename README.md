@@ -19,7 +19,7 @@ This project is currently a work in progress.
 ## Updates: 
 - 2/16/19 - First Model Trained. 67% top-1 accuracy on test dataset.
 - 3/02/19 - Model 2 69% top-1 accuracy.
-- 3/18/19 - Pushed Matlab script that finds individual subjects and potential subject/object 
+- 3/18/19 - Completed Matlab script that finds individual subjects and potential subject/object 
 	    pairings and returns the associated feature vectors.
 	    Feature vectors were then classified using Model 2 and Top-3 potential classes were identified.
 	    
