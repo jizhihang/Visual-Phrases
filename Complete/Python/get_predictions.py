@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 """
 Script to get predictions from Random Forest Model. 
+arguments should be:
+    filename (n value for top-n values in predictions)
+    default n is 3.
+    ex:
+    run get_predictions.py 'test_001.mat' 5
+    saves top 5 predictions.
 """
 import sys
 import numpy as np
