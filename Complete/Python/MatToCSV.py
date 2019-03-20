@@ -39,7 +39,7 @@ def unpackmat(fname, istype):
     
     
     def in_f():
-        D = mat['TrainingInput']
+        D = mat['Input']
         inp_v = []
         #Get input feature arrays
         for ind, val in np.ndenumerate(D):
